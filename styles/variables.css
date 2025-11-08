@@ -1,13 +1,15 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --width-main: clamp(375px, 100vw, 700px);
+  --width-main: clamp(375px, 100vw, 696px);
   --font-size: 18px;
   --height-welcome: 368px;
-  --height-card: 959px;
   --height-card__title: 31px;
   --h1-welcome: 65px;
   --h2-welcome: 23px;
   --margin-save: 180px;
   --width-save: 335px;
   --height-save: 55px;
+  --margin-left-label: 25px;
+  --width-dialog-text: 234px;
+  --width-dialog-button-close: 293px;
 }
