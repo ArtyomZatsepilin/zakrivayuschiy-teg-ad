@@ -21,7 +21,8 @@
         </div>
         <button class="dialog__close"
               type="button" 
-              onclick="window['dialog'].close()"
+              onclick="event.preventDefault(); window['dialog'].close();"
+
           >ок</button>
       </dialog>
     <header class="header"></header> <!-- А как по смыслу в макете тут хэдером можно назвать что-то-->
