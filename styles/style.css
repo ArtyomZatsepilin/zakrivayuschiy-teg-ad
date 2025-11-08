@@ -14,14 +14,15 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family:'Inter-Variable';
-  font-size: 18px;
+  font-family:'Inter-Variable', sans-serif;
+  font-variation-settings: 'wght' 400;
+  font-size: var(--font-size);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   background-color: #1A1A1A;
-  background-image:repeating-linear-gradient(transparent, #d3d3d3 2px), repeating-linear-gradient(90deg, transparent, #d3d3d3 2px);
+  background-image: repeating-linear-gradient(transparent, #d3d3d3 2px), repeating-linear-gradient(90deg, transparent, #d3d3d3 2px);
 }
 
 .main-flex {
@@ -59,7 +60,7 @@
 .card {
   display: flex;
   flex-direction: column;
-gi  box-sizing: border-box;
+  box-sizing: border-box;
   border: 2px solid #000;
   width: 100%;
   background-color: #fff;
@@ -78,6 +79,12 @@ gi  box-sizing: border-box;
   font-size: 18px;
   margin-left: 10px;
   padding-top: 4px;
+}
+
+@supports (font-variation-settings: 'wght' 700) {
+  .card__title {
+      font-variation-settings: 'wght' 700;
+  }
 }
 
 .card__text {
@@ -144,4 +151,16 @@ gi  box-sizing: border-box;
 .save-button__text {
   font-family: 'PressStart2P-Regular';
   font-size: 14px;
+}
+
+@supports (-webkit-text-stroke: inherit){
+  .save-button__text {
+    -webkit-text-stroke: inherit
+  }
+}
+
+@supports (text-stroke: inherit){
+  .save-button__text {
+    -webkit-text-stroke: inherit
+  }
 }

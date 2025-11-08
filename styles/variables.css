@@ -1,6 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
   --width-main: clamp(375px, 100vw, 700px);
+  --font-size: 18px;
   --height-welcome: 368px;
   --height-card: 959px;
   --height-card__title: 31px;
