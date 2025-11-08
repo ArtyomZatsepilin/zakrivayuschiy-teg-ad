@@ -34,9 +34,11 @@
   inline-size: 357px;
   block-size: 193px;
   box-sizing: border-box;
+
 }
 
 .dialog[open] {
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,7 +46,14 @@
   gap: 30px;
   font-family: "PressStart2P-Regular";
   font-size: 14px;
+  top: 50%;
+  z-index: 1000;
 }
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.3);
+  backdrop-filter: blur(7px);
+} 
 
 .dialog__close {
   border: none;
@@ -191,6 +200,7 @@
   background-color: #fff;
   border: none;
   outline: 2px solid #000;
+  transition: box-shadow 0.3s ease;
 }
 
 .button__text {
@@ -287,6 +297,15 @@
 
 /* анимации  */
 
-.card__like-button:hover {
-  box-shadow: 5px 5px 0 #000;
+.card__like-button:focus {
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 1);
 }
+
+/* @keyframes shadow-of-button {
+  from {
+    box-shadow: 0 0 0 #000;
+  }
+  to {
+    box-shadow: 5px 5px 0 #000;
+  }
+} */
