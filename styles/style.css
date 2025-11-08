@@ -228,11 +228,11 @@
 /* градиенты на карточки */
 
 .grad1 {
-  filter: saturate(38%);
+  filter: saturate(38%) brightness(80%);
 }
 
 .grad2 {
-  filter: saturate(458%);
+  filter: saturate(458%) contrast(160%);
 }
 
 .grad3 {
