@@ -287,10 +287,6 @@
 
 /* анимации  */
 
-/* .card__like-button:hover {
-  animation: shadow-of-button 1s linear ease-in;
+.card__like-button:hover {
+  box-shadow: 5px 5px 0 #000;
 }
-
-@keyframes shadow-of-button {
-  
-} */
