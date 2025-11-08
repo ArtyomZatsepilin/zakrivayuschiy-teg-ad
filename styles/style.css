@@ -10,6 +10,10 @@
 
 */
 
+.dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.7); 
+} 
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -49,11 +53,6 @@
   top: 50%;
   z-index: 1000;
 }
-
-dialog::backdrop {
-  background-color: rgb(0 0 0 / 0.3);
-  backdrop-filter: blur(7px);
-} 
 
 .dialog__close {
   border: none;
