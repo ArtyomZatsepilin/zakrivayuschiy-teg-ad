@@ -10,22 +10,24 @@
 
 */
 
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family:'Inter-Variable', sans-serif;
-  font-variation-settings: 'wght' 400;
+  font-family: "Inter-Variable", sans-serif;
+  font-variation-settings: "wght" 400;
   font-size: var(--font-size);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: #1A1A1A;
-  background-image: repeating-linear-gradient(transparent, #d3d3d3 2px), repeating-linear-gradient(90deg, transparent, #d3d3d3 2px), linear-gradient(#e7e7e7, #1a1a1a);
+  background-color: #1a1a1a;
+  background-image:
+    repeating-linear-gradient(transparent, #d3d3d3 2px),
+    repeating-linear-gradient(90deg, transparent, #d3d3d3 2px),
+    linear-gradient(#e7e7e7, #1a1a1a);
   background-size: cover;
 }
-
+/* Диалоговое окно */
 .dialog {
   border: none;
   outline: 2px solid #000;
@@ -40,7 +42,7 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
-  font-family: 'PressStart2P-Regular';
+  font-family: "PressStart2P-Regular";
   font-size: 14px;
 }
 
@@ -50,8 +52,6 @@
   inline-size: var(--width-dialog-button-close);
   block-size: 38px;
   background-color: #fff;
-  /* margin: auto 0 30.5px 0; */
-  /* margin-top: 30px; */
 }
 
 .dialog__text-conteiner {
@@ -68,6 +68,7 @@
   text-transform: uppercase;
   width: var(--width-dialog-text);
 }
+/* конец диалоговому окну */
 
 .main-flex {
   display: flex;
@@ -93,12 +94,12 @@
 }
 
 .card-welcome-h1 {
-  font-family: 'PressStart2P-Regular';
+  font-family: "PressStart2P-Regular";
   font-size: var(--h1-welcome);
 }
 
 .card-welcome-h2 {
-  font-family: 'PressStart2P-Regular';
+  font-family: "PressStart2P-Regular";
   font-size: var(--h2-welcome);
   text-transform: uppercase;
 }
@@ -120,32 +121,30 @@
 
 .card img {
   border-top: 2px solid #000;
-  /* border-bottom: 2px solid #000; */
   width: 100%;
 }
 
 .card__over-img__text {
-  font-family: 'PressStart2P-Regular';
+  font-family: "PressStart2P-Regular";
   font-size: 14px;
   position: absolute;
   top: 25px;
   right: var(--margin-left-label);
 }
 
-@supports (-webkit-text-stroke: 1px #fff){
+@supports (-webkit-text-stroke: 1px #fff) {
   .card__over-img__text {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
   }
 }
 
-@supports (text-stroke: 1px #fff){
+@supports (text-stroke: 1px #fff) {
   .card__over-img__text {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
   }
 }
 
 .card__title {
-  /* block-size: var(--height-card__title); */
   background-color: #fff;
   font-weight: 700;
   font-style: bold;
@@ -155,9 +154,9 @@
   padding-top: 4px;
 }
 
-@supports (font-variation-settings: 'wght' 700) {
+@supports (font-variation-settings: "wght" 700) {
   .card__title {
-      font-variation-settings: 'wght' 700;
+    font-variation-settings: "wght" 700;
   }
 }
 
@@ -175,10 +174,9 @@
   width: min-content;
   height: min-content;
   margin: auto 25px 25px auto;
-
 }
 
-.card__icon-button{
+.card__icon-button {
   width: min-content;
   height: min-content;
   margin-top: 9px;
@@ -196,7 +194,7 @@
 }
 
 .button__text {
-  font-family: 'PressStart2P-Regular';
+  font-family: "PressStart2P-Regular";
   font-size: 14px;
 }
 
@@ -223,10 +221,9 @@
 }
 
 .save-button__text {
-  font-family: 'PressStart2P-Regular';
+  font-family: "PressStart2P-Regular";
   font-size: 14px;
 }
-
 
 /* градиенты на карточки */
 
@@ -243,7 +240,7 @@
 }
 
 .grad4 {
-  filter:hue-rotate(45deg) invert(0.8);
+  filter: hue-rotate(45deg) invert(0.8);
 }
 
 .grad5 {
@@ -265,26 +262,35 @@
 @media (width <= 375px) {
   :root {
     --width-main: clamp(375px, 100vw, 700px);
-  --font-size: 18px;
-  --height-welcome: 327px;
-  --height-card__title: 31px;
-  --h1-welcome: 49px;
-  --h2-welcome: 14px;
-  --margin-save: 35px;
-  --width-save: 306px;
-  --height-save: 80px;
-  --margin-left-label: 11px;
-  --width-dialog-text: 198px;
-  --width-dialog-button-close: 257px;
-    }
+    --font-size: 18px;
+    --height-welcome: 327px;
+    --height-card__title: 31px;
+    --h1-welcome: 49px;
+    --h2-welcome: 14px;
+    --margin-save: 35px;
+    --width-save: 306px;
+    --height-save: 80px;
+    --margin-left-label: 11px;
+    --width-dialog-text: 198px;
+    --width-dialog-button-close: 257px;
+  }
 
-    .save-button {
-  flex-direction: column;
-    }
+  .save-button {
+    flex-direction: column;
+  }
 
-    .save-button__disketto {
-  width: 28px;
-  margin-top: 2px;
+  .save-button__disketto {
+    width: 28px;
+    margin-top: 2px;
+  }
 }
 
+/* анимации  */
+
+/* .card__like-button:hover {
+  animation: shadow-of-button 1s linear ease-in;
 }
+
+@keyframes shadow-of-button {
+  
+} */
