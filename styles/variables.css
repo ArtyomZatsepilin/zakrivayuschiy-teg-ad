@@ -24,4 +24,5 @@
   --header-title-font-size: clamp(3.063rem, 1.909rem + 4.92vw, 4.063rem);
   --header-subtitle-font-size: clamp(0.875rem, 0.226rem + 2.77vw, 1.438rem);
   --linear-gradient: 0%;
+  --sparkss: white;
 }

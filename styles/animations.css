@@ -47,7 +47,7 @@
   transition: fill var(--time_step) ease;
 }
 
-.card__icon-button:active .main-body {
+.card__icon-button:active .main-body, .card__icon-button:active .sparks {
   fill: var(--heart-sparks-color);
   transition: fill var(--time_step) ease 0.05s;
 }
